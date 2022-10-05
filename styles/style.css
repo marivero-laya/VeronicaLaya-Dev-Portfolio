@@ -1,12 +1,153 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --heading-font-family: "Rochester", cursive;
+  --default-font-family: "Playfair Display", serif;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --accent-color: #6e3032;
+  --secondary-color: #ddbfc0d8;
 }
+
+.navbar {
+  background-color: rgb(227, 201, 131, 0.45);
+}
+
 body {
-  margin: 100px 0;
+  font-family: var(--default-font-family);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+h1 {
+  font-size: 65px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  height: 100px;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
 .hero {
-  background-color: red;
-  padding: 160px 20px;
+  height: 120vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/pink-wallpaper.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 150px;
+  margin-top: 0px;
+}
+
+.wrapper {
+  background-color: var(--secondary-color);
+}
+
+.intro {
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  padding: 30px 30px;
+}
+
+.heading {
+  padding-top: 100px;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  border: solid var(--accent-color) 1px;
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.primary-button:hover {
+  background: white;
+  color: var(--accent-color);
+  border: solid var(--accent-color) 1px;
+  box-shadow: var(--box-shadow);
+}
+
+.secondary-button {
+  border: solid var(--accent-color) 1px;
+  background-color: white;
+  color: var(--accent-color);
+  box-shadow: var(--box-shadow);
+}
+
+.secondary-button:hover {
+  background-color: var(--accent-color);
+  border: solid var(--accent-color) 1px;
+  box-shadow: var(--box-shadow);
+}
+
+.profile-pic {
+  max-width: 400px;
+  border-radius: 500px;
+}
+
+.about-pic {
+  max-width: 400px;
+  border-radius: 200px;
+}
+
+.skills-section {
+  max-width: 700px;
+  padding-top: 40px;
+}
+
+.skills-icons {
+  max-width: 80px;
+  padding: 5px;
+}
+
+.footer-icon {
+  color: var(--accent-color);
+  background: white;
+  padding: 10px;
+  border-radius: 100%;
+  margin: 10px 15px;
+}
+
+.footer-icon:hover {
+  color: white;
+  background: var(--accent-color);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 }

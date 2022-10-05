@@ -12,12 +12,13 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Rochester&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles/style.css" />
 
     <script
@@ -33,7 +34,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/" title="Homepage">Veronica Laya</a>
         <button
@@ -79,40 +80,38 @@
       </div>
     </nav>
 
-    <div class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Hi there!</h2>
-            <h1>My name is Veronica Laya</h1>
-            <p class="mt-5">
-              I'm a Jr front-end developer and freelancer based in Europe.
-              Recently graduated from
-              <a href="https://www.shecodes.io/" target="_blank">SheCodes</a>
-              as a front-end developer and I'm currently working on expanding my
-              knowledge in web development.
-            </p>
-            <div class="mb-5 mt-5">
-              <a href="/aboutme.html">Learn more about me</a>
-            </div>
-            <a
-              href="/projects.html"
-              class="btn btn-primary primary-button d-inline-block me-2"
-              >Projects</a
-            >
-            <a
-              href="/contactme.html"
-              class="btn btn-primary secondary-button d-inline-block"
-              >Contact</a
-            >
+    <div class="container-fluid hero">
+      <div class="row">
+        <div class="col-5 box-shadow">
+          <img
+            src="images/vero-laya.png"
+            alt="veronica-laya-image"
+            class="img-fluid shadow-lg d-flex profile-pic d-none d-md-block"
+          />
+        </div>
+        <div class="col-7 intro">
+          <h2>Hi there!</h2>
+          <h1>My name is Veronica Laya</h1>
+          <p class="mt-5">
+            I'm a junior front-end developer and freelancer based in Europe.
+            Recently graduated from
+            <a href="https://www.shecodes.io/" target="_blank">SheCodes</a>
+            as a front-end developer and I'm currently working on expanding my
+            knowledge in web development.
+          </p>
+          <div class="mb-5 mt-5">
+            <a href="/aboutme.html">Learn more about me</a>
           </div>
-          <div class="col">
-            <img
-              src="images/ProfilePic.jpeg"
-              alt="veronica-laya-image"
-              class="img-fluid shadow-lg d-flex profile-pic"
-            />
-          </div>
+          <a
+            href="/projects.html"
+            class="btn primary-button d-inline-block me-2"
+            >Projects</a
+          >
+          <a
+            href="/aboutme.html#contact-form"
+            class="btn secondary-button d-inline-block"
+            >Contact</a
+          >
         </div>
       </div>
     </div>
@@ -123,22 +122,22 @@
           href="https://github.com/marivero-laya"
           target="_blank"
           title="GitHub"
-          ><i class="fab fa-github"></i
+          ><i class="footer-icon fab fa-github"></i
         ></a>
         <a
           href="https://www.linkedin.com/in/veronica-laya-1b8922a4/"
           target="_blank"
           title="LinkedIn"
-          ><i class="fab fa-linkedin"></i
+          ><i class="footer-icon fab fa-linkedin"></i
         ></a>
         <a
           href="https://www.instagram.com/marivero_laya/"
           target="_blank"
           title="Instagram"
-          ><i class="fab fa-instagram"></i
+          ><i class="footer-icon fab fa-instagram"></i
         ></a>
         <a href="mailto:laya.mvla@gmail.com" title="Email"
-          ><i class="far fa-envelope"></i
+          ><i class="footer-icon far fa-envelope"></i
         ></a>
         <p class="copywright">© 2022 Coded by Veronica Laya</p>
       </div>
