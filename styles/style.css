@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: rgb(227, 201, 131, 0.90);
+  background-color: rgb(227, 201, 131, 0.9);
 }
 
 body {
@@ -24,8 +24,7 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 65px;
-  line-height: 1.5;
+  font-size: 74px;
 }
 
 h2 {
@@ -129,6 +128,10 @@ footer {
 
 .project-img {
   max-width: 450px;
+  padding: 20px 20px;
+  background-color: rgb(255, 255, 255, 0.60);
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .footer-icon {
